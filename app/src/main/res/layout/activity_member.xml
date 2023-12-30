@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lavender_purple">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ABOUT US"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/statement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="We are a dedicated team working together to create amazing application named Tasker."
+        android:textSize="14sp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/title"/>
+
+    <LinearLayout
+        android:id="@+id/profileContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/statement">
+
+        <LinearLayout
+            android:id="@+id/profile1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imageViewProfile1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/umairah"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp">
+
+                <TextView
+                    android:id="@+id/textViewName1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NURUL UMAIRAH BINTI MOHD BADLI"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/textViewId1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2022616642"
+                    android:textSize="16sp"/>
+
+                <!-- Add other TextViews for displaying member 1 information -->
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/profile2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imageViewProfile2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/aleeya"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp">
+
+                <TextView
+                    android:id="@+id/textViewName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ALEEYA BINTI AHMAD MAHMUD"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/textViewId2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2022836268"
+                    android:textSize="16sp"/>
+
+                <!-- Add other TextViews for displaying member 2 information -->
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/profile3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imageViewProfile3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/damia"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp">
+
+                <TextView
+                    android:id="@+id/textViewName3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DAMIA SYAFIQAH BINTI MOHD SALLEH"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/textViewId3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2022645986"
+                    android:textSize="16sp"/>
+
+                <!-- Add other TextViews for displaying member 3 information -->
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/profile4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imageViewProfile4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/alesya"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp">
+
+                <TextView
+                    android:id="@+id/textViewName4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NUR ALIA ALESYA BINTI ABDUL AZIZ"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/textViewId4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2022484762"
+                    android:textSize="16sp"/>
+
+                <!-- Add other TextViews for displaying member 4 information -->
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewClickableURL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Visit our Github : www.google.com"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:textColorLink="@color/blue_link"
+            android:autoLink="web" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

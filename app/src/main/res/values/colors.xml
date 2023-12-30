@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lavender_purple">#957DAD</color>
+    <color name="thistle">#E0BBE4</color>
+    <color name="pastel_violet"> #D291BC</color>
+    <color name="cotton_candy">#FEC8D8</color>
+    <color name="lumber">#FFDFD3</color>
+    <color name="blue_link">#0000FF</color>
+    <color name="red">#FF6692</color>
+    <color name="green">#BDE7BD</color>
+
+
+
+</resources>
