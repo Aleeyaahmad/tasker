@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Tasker</string>
+
+    <string name="messageWithLink">Click <a href="https://www.github.com/Aleeyaahmad" >here</a> to visit Github</string>
+
+
+
 </resources>

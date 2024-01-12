@@ -1,10 +1,10 @@
 package com.example.tasker;
 
-public class DataClass
-{
+public class DataClass {
     private String taskName;
     private String taskDescription;
     private String key;
+    private String dueDate;
 
     public String getKey() {
         return key;
@@ -30,5 +30,13 @@ public class DataClass
 
     public String getTaskDescription() {
         return taskDescription;
+    }
+
+    public String getDueDate() {
+        return dueDate;
+    }
+
+    public void setDueDate(String dueDate) {
+        this.dueDate = dueDate;
     }
 }

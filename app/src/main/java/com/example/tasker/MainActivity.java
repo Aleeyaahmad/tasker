@@ -1,5 +1,6 @@
 package com.example.tasker;
 
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,7 +20,9 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class MainActivity extends AppCompatActivity {
+
 
     FloatingActionButton fab;
     RecyclerView recyclerView;
@@ -30,10 +33,12 @@ public class MainActivity extends AppCompatActivity {
     SearchView searchView;
     Button aboutUs;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         fab = findViewById(R.id.fab);
         recyclerView = findViewById(R.id.recyclerView);
@@ -41,8 +46,10 @@ public class MainActivity extends AppCompatActivity {
         searchView.clearFocus();
         aboutUs = findViewById(R.id.btnAboutUs);
 
+
         GridLayoutManager gridLayoutManager = new GridLayoutManager(MainActivity.this, 1);
         recyclerView.setLayoutManager(gridLayoutManager);
+
 
         // Create the dialog
         AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
@@ -50,12 +57,15 @@ public class MainActivity extends AppCompatActivity {
         builder.setView(R.layout.progress_layout);
         dialog = builder.create();
 
+
         // Initialize the adapter and set it to RecyclerView
         adapter = new MyAdapter(MainActivity.this, dataList);
         recyclerView.setAdapter(adapter);
 
+
         // Show the dialog before fetching data
         dialog.show();
+
 
         // Fetch data from Firebase
         databaseReference = FirebaseDatabase.getInstance().getReference("Tasker");
@@ -81,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
 
+
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
                 // Dismiss the dialog if an error occurs
@@ -90,11 +101,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
                 return false;
             }
+
 
             @Override
             public boolean onQueryTextChange(String newText) {
@@ -102,6 +115,7 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
+
 
         // Set click listener for FAB
         fab.setOnClickListener(new View.OnClickListener() {
@@ -112,6 +126,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
         // Set click listener for About Us button
         aboutUs.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -121,6 +136,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
 
     public void searchList(String text) {
         ArrayList<DataClass> searchList = new ArrayList<>();
